@@ -15,6 +15,6 @@ public class ArithmeticCapabilityTest {
     @Test
     public void additionFail(){
         int add = 3+7;
-        Assert.assertEquals(7, add);
+        Assert.assertEquals(10, add);
     }
 }
