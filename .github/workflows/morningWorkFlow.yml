@@ -2,7 +2,7 @@ name: Morning build and test
 
 on:
   schedule:
-   - cron: '40 11 * * *'
+   - cron: '0 18 * * *'
 
 jobs:
  morning_greeting:
