@@ -1,0 +1,16 @@
+name: Morning build and test
+
+on:
+  schedule:
+   - cron: '40 11 * * *'
+
+jobs:
+ morning_greeting:
+  runs-on: ubuntu-latest
+  steps:
+  
+   - name: Say Hi
+     run: echo 'Hi'
+    
+   - name: K aze
+     run: echo 'K aze'
