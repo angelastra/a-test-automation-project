@@ -41,7 +41,7 @@ public class JsonPlaceHolderAPITest {
         given()
         .contentType(ContentType.JSON)
         .when()
-        .body(new File("src\\test\\java\\basdijkstra\\resources\\PostPayload.json"))
+        .body(new File(System.getProperty("user.dir")+"/src/test/java/basdijkstra/resources/PostPayload.json"))
         .post("/posts")
         .then()
         .statusCode(201)
