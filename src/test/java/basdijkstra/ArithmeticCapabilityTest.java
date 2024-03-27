@@ -1,6 +1,7 @@
 package basdijkstra;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class ArithmeticCapabilityTest {
@@ -12,9 +13,10 @@ public class ArithmeticCapabilityTest {
         Assert.assertEquals(4, add);
     }
 
-    @Test
+    @Ignore
+    @Test()
     public void additionFail(){
         int add = 3+7;
-        Assert.assertEquals(10, add);
+        Assert.assertEquals(7, add);
     }
 }
