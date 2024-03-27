@@ -1,17 +1,23 @@
-name: Morning build and test
+name: nightly build at 11pm
 
 on:
   schedule:
-    - cron: '0 22 * * 1,2'
-    - cron: '0 22 * * 3,4'
+    - cron: '0 10 * * *'
 
 jobs:
- morning_greeting:
-  runs-on: ubuntu-latest
-  steps:
-  
-   - name: Say Hi
-     run: echo 'Hi'
-    
-   - name: K aze
-     run: echo 'K aze'
+  nightly_build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3.3.0
+        
+      - name: Run Unit Tests
+        run: mvn test
+
+      - name: Build with Maven
+        run: mvn -DskipTests -B package --no-transfer-progress --file ./pom.xml
+
+      - uses: actions/upload-artifact@master
+        with:
+          name: digibank.war
+          path: ./target/*digitalbank*.war
