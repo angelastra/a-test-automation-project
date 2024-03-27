@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="basdijkstra.ArithmeticCapabilityTest" time="0.135" tests="2" errors="0" skipped="1" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="basdijkstra.ArithmeticCapabilityTest" time="0.114" tests="2" errors="0" skipped="1" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="MX"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\negre\AppData\Local\Temp\surefire13384345342895933876\surefirebooter2609281843932111799.jar C:\Users\negre\AppData\Local\Temp\surefire13384345342895933876 2024-03-27T14-05-15_435-jvmRun1 surefire5907916141556418685tmp surefire_06033274749661745307tmp"/>
+    <property name="sun.java.command" value="C:\Users\negre\AppData\Local\Temp\surefire16962855721173838302\surefirebooter10012910899637800789.jar C:\Users\negre\AppData\Local\Temp\surefire16962855721173838302 2024-03-27T14-30-28_446-jvmRun1 surefire7082933182426191256tmp surefire_01578154648235301202tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="ArithmeticCapabilityTest"/>
     <property name="surefire.test.class.path" value="C:\Users\negre\Desktop\a-test-automation-project\target\test-classes;C:\Users\negre\Desktop\a-test-automation-project\target\classes;C:\Users\negre\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\negre\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\negre\.m2\repository\io\rest-assured\rest-assured\5.0.0\rest-assured-5.0.0.jar;C:\Users\negre\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar;C:\Users\negre\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar;C:\Users\negre\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\negre\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\negre\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\negre\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\negre\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\negre\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\negre\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\negre\.m2\repository\io\rest-assured\json-path\5.0.0\json-path-5.0.0.jar;C:\Users\negre\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar;C:\Users\negre\.m2\repository\io\rest-assured\rest-assured-common\5.0.0\rest-assured-common-5.0.0.jar;C:\Users\negre\.m2\repository\io\rest-assured\xml-path\5.0.0\xml-path-5.0.0.jar;C:\Users\negre\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\negre\AppData\Local\Temp\surefire13384345342895933876\surefirebooter2609281843932111799.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\negre\AppData\Local\Temp\surefire16962855721173838302\surefirebooter10012910899637800789.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.1+12-LTS-39"/>
@@ -60,5 +60,5 @@
   <testcase name="additionFail" classname="basdijkstra.ArithmeticCapabilityTest" time="0">
     <skipped/>
   </testcase>
-  <testcase name="additionPass" classname="basdijkstra.ArithmeticCapabilityTest" time="0.006"/>
+  <testcase name="additionPass" classname="basdijkstra.ArithmeticCapabilityTest" time="0.004"/>
 </testsuite>
