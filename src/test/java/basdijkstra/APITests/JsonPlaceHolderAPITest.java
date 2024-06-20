@@ -9,6 +9,9 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.ValueSource;
 
 
 public class JsonPlaceHolderAPITest {
@@ -19,10 +22,15 @@ public class JsonPlaceHolderAPITest {
     }
 
 
-    @Test
-    public void checkUser1Information(){
+    @ParameterizedTest
+    @CsvSource({
+            "1, Leanne Graham,    harness real-time e-markets",
+            "2, Ervin Howell,     synergize scalable supply-chains",
+            "3, Clementine Bauch, e-enable strategic applications"
+    })
+    public void checkUserInformation(String userId, String name, String bs){
         given()
-        .pathParam("user", "1")
+        .pathParam("user", userId)
         .when()
         .get("/users/{user}")
         .then()
@@ -30,9 +38,9 @@ public class JsonPlaceHolderAPITest {
         .and()
         .assertThat().contentType(equalTo("application/json; charset=utf-8"))
         .and()
-        .body("name", equalTo("Leanne Graham"))
+        .body("name", equalTo(name))
         .and()
-        .body("company.bs", equalTo("harness real-time e-markets"));
+        .body("company.bs", equalTo(bs));
 
     }
 
