@@ -2,7 +2,7 @@ name: nightly build at 11pm
 
 on:
   schedule:
-    - cron: '0 10 * * *'
+    - cron: '0 18 * * *'
 
 jobs:
   nightly_build:
@@ -13,11 +13,3 @@ jobs:
         
       - name: Run Unit Tests
         run: mvn test
-
-      - name: Build with Maven
-        run: mvn -DskipTests -B package --no-transfer-progress --file ./pom.xml
-
-      - uses: actions/upload-artifact@master
-        with:
-          name: digibank.war
-          path: ./target/*digitalbank*.war
